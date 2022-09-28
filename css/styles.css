@@ -1,0 +1,113 @@
+/* колір основного тексту #212121;  */
+/* вторинний колір тексту #757575 */
+/* білий #FFFFFF; */
+/* колір-акцент #2196F3; */
+/* основний колір фона #F5F5F5;  */
+/* вторинний колір фона #F5F4FA; */
+/* колір фона шапки #FFFFFF; */
+/* колір фона футера #2F303A; */
+/* колір фона героя #2F303A; */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white: #FFFFFF;
+    --primary-background-color: #F5F5F5;
+    --secondary-background-color:#F5F4FA;
+    --header-background-color: #FFFFFF;
+    --footer-background-color: #2F303A;
+    }
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+  /* шапка */
+  .page-header {
+background-color: var(--header-background-color);
+color: var(--title-text-color);
+  }
+
+  .logo.header {
+    color: var(--title-text-color);
+  }
+  
+  .accent {
+color: var(--accent-color);
+  }
+
+  .site-nav a {
+    color: var(--title-text-color);
+  }
+
+  .auth-nav a {
+color:var(--title-text-color);
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    color: var(--accent-color);
+  }
+
+  .auth-nav a:hover,
+  .auth-nav a:focus {
+    color: var(--accent-color);
+  }
+  .auth-nav li:hover {
+    color: var(--accent-color);
+  }
+
+  h2, h3 {
+    color: var(--title-text-color);
+}
+
+.button.primary {
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
+.hero {
+    background-color: var(--footer-background-color);
+}
+
+.hero-title {
+    color: var(--white);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #2196F3;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    }
+
+footer {
+    background-color: var(--footer-background-color);
+}
+
+.logo.footer {
+    color: var(--white);
+}
