@@ -22,6 +22,7 @@ body {
     background-color: var(--white);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -33,20 +34,23 @@ ul {
 color: var(--title-text-color);
   }
 
-  a {
-    text-decoration: none
-  }
+  /* a {
+    text-decoration: none */
+  
   .logo.header {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
   }
   
   .accent {
 color: var(--accent-color);
+  }
+
+  .logo.header {
+    text-decoration: none;
   }
 
   .site-nav a {
@@ -55,6 +59,7 @@ color: var(--accent-color);
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
+      text-decoration: none;
   }
 
   .auth-nav a {
@@ -63,6 +68,7 @@ color:var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   }
 
   .site-nav a:hover,
@@ -83,7 +89,6 @@ color:var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
   
@@ -91,7 +96,10 @@ color:var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+}
+
+.button {
+  font-family: inherit;
 }
 
 .button.primary {
@@ -148,13 +156,16 @@ footer {
     background-color: var(--footer-background-color);
 }
 
+footer a {
+  text-decoration: none;
+}
+
 .logo.footer {
     color: var(--white);
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .address-legal {
@@ -162,7 +173,6 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -170,7 +180,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -217,21 +226,28 @@ footer {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
 }
 
 .team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;;
 }
 
 .team p {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+}
+
+.works h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works p {
+  font-size: 16px;
+  line-height: 1.88;
 }
